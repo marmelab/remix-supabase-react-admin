@@ -1,53 +1,37 @@
-# Welcome to Remix!
+# React Admin with Remix and Supabase
 
-- [Remix Docs](https://remix.run/docs)
+This repository contains an example [Remix](https://remix.run/) project, embedding a [React Admin](https://marmelab.com/react-admin/) app, hooked to a [Supabase](https://supabase.com/) database.
 
-## Development
+This project was created as a result of [a tutorial article posted on the marmelab blog](https://marmelab.com/fr/blog/2022/06/22/add-react-admin-to-your-remix-app-using-supabase.html). We strongly advise you to check it out if you haven't already, as it gives explanations and documents some gotchas about this integration.
 
-From your terminal:
+## Setup
 
-```sh
-npm run dev
-```
+### Install dependencies
 
-This starts your app in development mode, rebuilding assets on file changes.
+Install the project dependencies using your favorite package manager (`yarn` or `npm`).
 
-## Deployment
+### Configure the Supabase instance
 
-First, build your app for production:
+You need to configure your Supabase instance URL and service role key in a `.env` file at the root of the repository.
 
 ```sh
-npm run build
+# In `.env`
+SUPABASE_URL="https://MY_INSTANCE.supabase.co"
+SUPABASE_SERVICE_ROLE="MY_SERVICE_ROLE_KEY"
 ```
 
-Then run the app in production mode:
+If you don't have a Supabase instance already, you can create one for free directly on the [Supabase website](https://app.supabase.com/).
+
+## Run the app
+
+Run the app with the following command (using `yarn` or `npm`):
 
 ```sh
 npm start
 ```
 
-Now you'll need to pick a host to deploy it to.
+The Remix app is available at: [http://localhost:3000/](http://localhost:3000/).
 
-### DIY
+The React Admin app is available at: [http://localhost:3000/admin](http://localhost:3000/admin).
 
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
 
-Make sure to deploy the output of `remix build`
-
-- `build/`
-- `public/build/`
-
-### Using a Template
-
-When you ran `npx create-remix@latest` there were a few choices for hosting. You can run that again to create a new project, then copy over your `app/` folder to the new project that's pre-configured for your target server.
-
-```sh
-cd ..
-# create a new project, and pick a pre-configured host
-npx create-remix@latest
-cd my-new-remix-app
-# remove the new project's app (not the old one!)
-rm -rf app
-# copy your app over
-cp -R ../my-old-remix-app/app app
-```
