@@ -1,4 +1,4 @@
-# React Admin with Remix and Supabase
+# Example React Admin App with Remix and Supabase
 
 This repository contains an example [Remix](https://remix.run/) project, embedding a [React Admin](https://marmelab.com/react-admin/) app, hooked to a [Supabase](https://supabase.com/) database.
 
@@ -22,7 +22,7 @@ SUPABASE_SERVICE_ROLE="MY_SERVICE_ROLE_KEY"
 
 If you don't have a Supabase instance already, you can create one for free directly on the [Supabase website](https://app.supabase.com/).
 
-## Run the app
+## Usage
 
 Run the app with the following command (using `yarn` or `npm`):
 
@@ -35,3 +35,6 @@ The Remix app is available at: [http://localhost:3000/](http://localhost:3000/).
 The React Admin app is available at: [http://localhost:3000/admin](http://localhost:3000/admin).
 
 
+## License
+
+MIT, sponsored by [marmelab](https://marmelab.com/).
