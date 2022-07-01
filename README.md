@@ -2,7 +2,7 @@
 
 This repository contains an example [Remix](https://remix.run/) project, embedding a [React Admin](https://marmelab.com/react-admin/) app, hooked to a [Supabase](https://supabase.com/) database.
 
-This project was created as a result of [a tutorial article posted on the marmelab blog](https://marmelab.com/fr/blog/2022/07/01/add-react-admin-to-your-remix-app-using-supabase.html). We strongly advise you to check it out if you haven't already, as it gives explanations and documents some gotchas about this integration.
+This project was created as a result of [a tutorial article posted on the marmelab blog](https://marmelab.com/blog/2022/07/01/add-react-admin-to-your-remix-app-using-supabase.html). We strongly advise you to check it out if you haven't already, as it gives explanations and documents some gotchas about this integration.
 
 ## Setup
 
